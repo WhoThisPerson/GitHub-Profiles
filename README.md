@@ -22,7 +22,6 @@ In this project you create a search app that uses GitHub API to retrieve user in
 To get the data you need to communicate with GitHub API. you can either
 
 - [Read Docs](https://developer.github.com/v3/)
-- [Check API directly](https://api.github.com/users/chaharshivam)
 
 To get data from API you can check [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) in javascript
 
