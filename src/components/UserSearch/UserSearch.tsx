@@ -5,9 +5,18 @@ interface UserSearchProps {
 }
 
 function UserSearch({ onSearch }: UserSearchProps) {
+
+    const [username, setUsername] = useState("");
+
     return (
         <div>
-            User Search Component TBA
+            <input
+                type="text"
+                placeholder="Enter GitHub username..."
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+            />
+            <button onClick={() => onSearch(username)}>Search</button>
         </div>
     )
 }

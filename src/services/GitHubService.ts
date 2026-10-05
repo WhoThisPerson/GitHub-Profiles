@@ -54,10 +54,14 @@ export async function getUserRepositories(username: string): Promise<Repository[
     try {
         const response = await githubClient.rest.repos.listForUser({
             username,
-            per_page: 4
         });
+        
+        // Sort repos by top star count and return the top 4
+        const repositories = response.data
+            .sort((a, b) => (b.stargazers_count ?? 0) - (a.stargazers_count ?? 0))
+            .slice(0, 4);
 
-        return response.data.map(repo => ({
+        return repositories.map(repo => ({
             name: repo.name,
             url: repo.html_url
         }));

@@ -35,8 +35,14 @@ function Main() {
     return (
         <>
             <UserSearch onSearch={handleSearchUser} />
-            <UserProfile />
-            <RepositoryList />
+
+            {error && (
+                <div role="alert">
+                    {error}
+                </div>
+            )}
+            <UserProfile user={userProfile} />
+            <RepositoryList repositories={userRepositories} />
         </>
     );
 }
