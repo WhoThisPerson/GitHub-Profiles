@@ -1,0 +1,19 @@
+.main {
+    width: min(100% - 2rem, 900px);
+    margin-inline: auto;
+    padding: 4rem 0;
+}
+
+.search-section {
+    max-width: 500px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.results-section {
+    margin-top: 4rem;
+}
+
+.error-message {
+    margin-top: 1rem;
+}

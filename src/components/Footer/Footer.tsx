@@ -1,8 +1,10 @@
 import { FaGithub } from "react-icons/fa";
 
+import "./Footer.css";
+
 function Footer() {
     return (
-        <footer>
+        <div className="footer">
             
             <a
                 href="https://github.com/WhoThisPerson/GitHub-Profiles"
@@ -12,7 +14,7 @@ function Footer() {
             >
                 <FaGithub size={28} />
             </a>
-        </footer>
+        </div>
     )
 }
 

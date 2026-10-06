@@ -15,8 +15,8 @@ In this project you create a search app that uses GitHub API to retrieve user in
 -   [X] User should get an alert if the username is not valid
 
 ## Bonus features
--  [ ] User can toggle dark/light mode
--  [ ] Selected mode should persist when user comes back to the app again
+-  [X] User can toggle dark/light mode
+-  [X] Selected mode should persist when user comes back to the app again
 
 ## Useful links and resources
 To get the data you need to communicate with GitHub API. you can either
@@ -26,3 +26,4 @@ To get the data you need to communicate with GitHub API. you can either
 To get data from API you can check [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) in javascript
 
 ## Preview:
+![GitHubProfiles Image](screenshots/main-ui.png)

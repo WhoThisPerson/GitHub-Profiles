@@ -5,10 +5,11 @@
   --color-text-secondary: #666666;
   --color-border: #e5e5e5;
   --color-link: #222222;
+  --border: #bdbdbd;
 }
 
 [data-theme="dark"] {
-  --color-background: #121212;
+  --color-background: #181616;
   --color-surface: #1e1e1e;
   --color-text: #f5f5f5;
   --color-text-secondary: #aaaaaa;

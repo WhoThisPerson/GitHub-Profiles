@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div>
-      <Header onToggleTheme={toggleTheme} />
+      <Header theme={theme} onToggleTheme={toggleTheme} />
       <Main />
       <Footer />
     </div>

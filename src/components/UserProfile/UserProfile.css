@@ -1,0 +1,16 @@
+.user-profile {
+    max-width: 500px;
+    margin-inline: auto;
+    padding: 2rem;
+    text-align: center;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.user-profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}

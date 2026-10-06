@@ -18,6 +18,8 @@ export interface UserProfile {
 export interface Repository {
     name: string;
     url: string;
+    stargazersCount: number;
+    language: string | null;
 }
 
 /**
@@ -63,7 +65,9 @@ export async function getUserRepositories(username: string): Promise<Repository[
 
         return repositories.map(repo => ({
             name: repo.name,
-            url: repo.html_url
+            url: repo.html_url,
+            stargazersCount: repo.stargazers_count ?? 0,
+            language: repo.language ?? null,
         }));
 
     } catch (error) {

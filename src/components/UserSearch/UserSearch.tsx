@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import "./UserSearch.css";
+
 interface UserSearchProps {
     onSearch: (username: string) => void;
 }
@@ -9,16 +11,25 @@ function UserSearch({ onSearch }: UserSearchProps) {
     const [username, setUsername] = useState("");
 
     return (
-        <div>
+        <form 
+            className="user-search"
+            onSubmit={(event) => {
+                event.preventDefault();
+                onSearch(username);
+            }}
+        >
             <input
                 type="text"
-                placeholder="Enter GitHub username..."
+                placeholder="Enter GitHub username"
                 value={username}
-                onChange={(e) => setUsername(e.target.value)}
+                onChange={event => setUsername(event.target.value)}
             />
-            <button onClick={() => onSearch(username)}>Search</button>
-        </div>
-    )
+
+            <button type="submit">
+                Search
+            </button>
+        </form>
+    );
 }
 
 export default UserSearch;
